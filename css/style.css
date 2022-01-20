@@ -1,14 +1,6 @@
-*{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
 
-body{
-    font-family: 'Poppins', sans-serif;
-    overflow: hidden;
-}
 
+/* SignIN Page */
 .wave{
 	position: fixed;
 	bottom: 0;
@@ -183,10 +175,15 @@ a:hover{
 .btn:hover{
 	background-position: right;
 }
+/* SignIn Page end */
 
 
 
-/*--------------------------Sidebar-------------------------------*/
+
+
+/*------------------------------------------- Header Page-------------------------- */
+
+/*----Sidebar----*/
 .SideBar{
 	background: #000;
 	backdrop-filter: blue(15px);
@@ -201,6 +198,7 @@ a:hover{
 }
 .SideBar.active{
 	left: 0;
+	z-index: 1;
 }
 .SideBar .menu{
 	width: 100%;
@@ -253,22 +251,112 @@ a:hover{
 	cursor: pointer;
 }
 .menu-btn{
-	position: absolute;
+	position: relative;
 	color: #000;
 	font-size: 20px;
 	cursor: pointer;
 }
 .menu-btn i{
 	background: #E5EEF0;
-	padding: 5px;
-	color: #005670;
-	margin: 25px 0 0 25px;
+    padding: 5px;
+    color: #e63a3a;
+    margin: 25px 0 0 25px;
+    opacity: 0.9;
 }
 img.logo-neptune{
 	width: 200px;
 	height: auto;
-	padding-left: 15px;
+	margin-right: 15px;
 }
+/* SideBar End */
+
+
+/*----Header visible Part----*/
+.header-top{
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+.user-icons{
+	position: relative;
+}
+.user-icons ul{
+	position: absolute;
+    right: 0;
+    top: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    line-height: 30px;
+    border-radius: 3px 0px 3px 0px;
+    box-shadow: 1px 1px 6px #666;
+	background: #fff;
+	display: none;
+	border: 1px solid #000;
+	color: #000;
+}
+.user-icons .adminRegister{
+	display: block;
+	z-index: 1;
+}
+/* .user-icons .Calendar{
+       width: 30px;
+	   height: 30px;
+	   background: lightcoral;
+} */
+
+/*------Home page--------*/
+.tableDashboard{
+	margin-top: 40px;
+}
+.table.sticky th{
+	position: sticky;
+    top: 0;
+    background: #e63a3a;
+    color: #fff;
+    opacity: 1;
+}
+.table.sticky th::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #000;
+}
+
+/*--Search-box--*/
+
+.searchBox{
+	padding: 30px 0px;
+}
+
+.searchBox form input[type=text] {
+	padding: 7px;
+	font-size: 17px;
+	border: 1px solid grey;
+	float: left;
+	width: 80%;
+	background: #f1f1f1;
+	border-radius: 5px 0 0 5px;
+	opacity: 0.7;
+  }
+  .searchBox form input:focus{
+	  outline: none;
+  }
+  
+  .searchBox form button {
+	float: left;
+	width: 15%;
+	padding: 7px;
+	background: #e63a3a;
+	color: white;
+	font-size: 17px;
+	border: 1px solid #666;
+	border-left: none;
+	cursor: pointer;
+	border-radius: 0 5px 5px 0;
+  }
 
 
 

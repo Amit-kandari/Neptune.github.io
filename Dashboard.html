@@ -2,54 +2,386 @@
 <html>
 
 <head>
-	<title>Dashboard</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<title>Dashboard-Table</title>
+	<meta name="viewport" content="width=device-width, initial-scale=0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/Responsive.css">
 </head>
 
 <body>
 
+	<section class="containers">
 
-	
-	<div class="menu-btn">
-		<i class="fas fa-bars"></i>
-		<img src="img/Naptune-Logo.png" alt="" class="logo-neptune">
-	</div>
 
-	<div class="SideBar">
-		<div class="close-btn">
-			<i class="fas fa-times"></i>
-		</div>
-		<div class="menu">
-			<div class="item">
-				<a href="javascript:void(0)" class="sub-btn"><i class="fa fa-desktop"></i>Dashboard<i
-						class="fas fa-angle-right dropdown"></i></a>
-				<div class="sub-menu">
-					<a href="" class="sub-item">ITEM 01</a>
-					<a href="" class="sub-item">ITEM 02</a>
-					<a href="" class="sub-item">ITEM 03</a>
-					<a href="" class="sub-item">ITEM 04</a>
-				</div>
+		<!----------------------------------------------- Header------------------------------>
+		<div class="header-top">
+			<div class="menu-btn">
+				<i class="fas fa-bars"></i>
+				<div class="Calendar"></div>
 			</div>
-			<div class="item"><a href="javascript:void(0)"><i class="fa fa-table"></i>Complaint Dashboard</a></div>
-			<div class="item">
-				<a href="javascript:void(0)" class="sub-btn"><i class="fa fa-th"></i>Vehicle Search<i
-						class="fas fa-angle-right dropdown"></i></a>
-				<div class="sub-menu">
-					<a href="index.html" class="sub-item">LogIn</a>
-					<a href="" class="sub-item">Register</a>
-				</div>
+			<div class="user-icons">
+				<span class="Calendar"></span>
+				<img src="img/Naptune-Logo.png" alt="" class="logo-neptune">
+				<i class="fas fa-user"></i>
+				<ul class="adminLogIn">
+					<li><a href="">LogIn</a></li>
+					<li><a href="">Register</a></li>
+				</ul>
 			</div>
-			<div class="item"><a href="javascript:void(0)"><i class="fa fa-cogs"></i>Transaction</a></div>
-			<div class="item"><a href="javascript:void(0)"><i class="fa fa-info-circle"></i>Utilities</a></div>
-			<div class="item"><a href="javascript:void(0)"><i class="fa fa-info-circle"></i>Other</a></div>
 		</div>
-	</div>
 
-		
+
+		<!-- Sidebar Menu -->
+
+		<div class="SideBar">
+			<div class="close-btn">
+				<i class="fas fa-times"></i>
+			</div>
+			<ul class="menu">
+				<li class="item">
+					<a href="javascript:void(0)" class="sub-btn"><i class="fa fa-desktop"></i>Dashboard<i
+							class="fas fa-angle-right dropdown"></i></a>
+					<ul class="sub-menu">
+						<li><a href="" class="sub-item">ITEM 01</a></li>
+						<li><a href="" class="sub-item">ITEM 02</a></li>
+						<li><a href="" class="sub-item">ITEM 03</a></li>
+						<li><a href="" class="sub-item">ITEM 04</a></li>
+					</ul>
+				</li>
+				<li class="item"><a href="javascript:void(0)"><i class="fa fa-table"></i>Complaint Dashboard</a></li>
+				<li class="item">
+					<a href="javascript:void(0)" class="sub-btn"><i class="fa fa-th"></i>Vehicle Search<i
+							class="fas fa-angle-right dropdown"></i></a>
+					<div class="sub-menu">
+						<a href="index.html" class="sub-item">LogIn</a>
+						<a href="" class="sub-item">Register</a>
+					</div>
+				</li>
+				<li class="item"><a href="javascript:void(0)"><i class="fa fa-cogs"></i>Transaction</a></li>
+				<li class="item"><a href="javascript:void(0)"><i class="fa fa-info-circle"></i>Utilities</a></li>
+				<li class="item"><a href="javascript:void(0)"><i class="fa fa-info-circle"></i>Other</a></li>
+			</ul>
+		</div>
+
+		<!-- Sidebar Menu end -->
+
+		<!------------- Header end --------------------->
+
+
+         <div class="searchBox">
+			<form class="example" action="">
+				<input type="text" placeholder="Search.." name="search">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			  </form>
+		 </div>
+
+		<div class="tableDashboard">
+			<table class="table table-bordered sticky">
+				<thead>
+					<tr>
+						<th scope="col">First</th>
+						<th scope="col">Second</th>
+						<th scope="col">Third</th>
+						<th scope="col">Four</th>
+						<th>Five</th>
+						<th>Six</th>
+						<th>Seven</th>
+						<th>Eight</th>
+						<th>Nine</th>
+						<th>Ten</th>
+						<th>#First</th>
+						<th>Second</th>
+						<th>Third</th>
+						<th>Four</th>
+						<th>Five</th>
+						<th>Six</th>
+						<th>Seven</th>
+						<th>Eight</th>
+						<th>Nine</th>
+						<th>Ten</th>
+						<th>#First</th>
+						<th>Second</th>
+						<th>Third</th>
+						<th>Four</th>
+						<th>Five</th>
+						<th>Six</th>
+						<th>Seven</th>
+						<th>Eight</th>
+						<th>Nine</th>
+						<th>Ten</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					
+					
+				</tbody>
+			</table>
+		</div>
+
+
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+			industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+			scrambled it to make a type specimen book.</p>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+				industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+				scrambled it to make a type specimen book.</p>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+					industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+					scrambled it to make a type specimen book.</p>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+						scrambled it to make a type specimen book.</p>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+							industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+							scrambled it to make a type specimen book.</p>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+								industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+								scrambled it to make a type specimen book.</p>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+									industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+									scrambled it to make a type specimen book.</p>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+										industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+										scrambled it to make a type specimen book.</p>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+											industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+											scrambled it to make a type specimen book.</p>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+												industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+												scrambled it to make a type specimen book.</p>
+
+
+
+
+	</section>
+
+
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
